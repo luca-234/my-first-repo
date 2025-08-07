@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Group Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div
+      class="bg-white shadow-lg rounded-xl p-6 w-full max-w-xl space-y-6">
+      <h1 class="text-2xl font-bold text-center">Random Group
+        Generator</h1>
+      <label class="block font-medium" for="interns">Enter intern
+        names
+        (one per line):</label><br>
+      <textarea class="w-full border border-gray-300 p-2 rounded"
+        id="interns"></textarea><br>
+      <label class="block font-medium" for="numberOfGroups">Number of
+        groups:</label>
+      <input class="w-full border border-gray-300 p-2 rounded"
+        type="number"
+        id="numberOfGroups" value="2" min="1"><br>
+      <button
+        class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-full"
+        onclick="generateGroups()" type="button">Generate Groups</button>
+      <div id="result"></div>
+    </div>
+
+    <script src="main.js">
+  
+</script>
+  </body>
+</html>
